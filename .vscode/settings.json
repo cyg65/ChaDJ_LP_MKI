@@ -1,0 +1,25 @@
+{
+    "workbench.iconTheme": "vscode-icons",
+    "window.zoomLevel": 0,
+    "colorInfo.languages": [{
+        "selector": "javascript",
+        "colors": "css"
+    }],
+    "colorize.languages": [
+        "javascript",
+    ],
+    "bracketPairColorizer.consecutivePairColors": [
+        "()",
+        "[]",
+        "{}",
+        "<>", [
+            "Gold",
+            "Orchid",
+            "LightSkyBlue"
+        ],
+        "Red"
+    ],
+    "flow.enabled": false,
+    "editor.formatOnSave": true,
+    "workbench.colorTheme": "Visual Studio Dark",
+}

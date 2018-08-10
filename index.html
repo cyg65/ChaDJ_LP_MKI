@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <title>ChaDJ Home</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta rel="icon" href="">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid h-100">
+        <!-- About Section  -->
+        <div id="about" class="container-fluid d-flex flex-row overflow-hidden position-absolute">
+            <div id="left-section" class="text-dark font-weight-bold col-lg-6 col-xl-5 col-md-4 mx-sm-0 mx-xl-5 mx-lg-5 mx-md-5 text-justify overflow-hidden">
+                <h4 class="green">CDJapan Presents</h4>
+                <h1 class="display-4 font-weight-bold green">ChaDJ Selection</h1>
+                <hr class="my-4 bg-white">
+
+                <p>
+                    By popular demand, brought to you by
+                    <a href="http://www.cdjapan.co.jp/">CDJapan</a>
+                    is the latest trend in leading a healthy and tasteful life - Cha, the authentic Japanese tea experience.</p>
+                <p id="sm-nondisplay"> Our catalog does not only include the iconic Matcha; we also offers alternatives such as Sencha packages
+                    which are your instant charge of Cha without any cumbersome tools and rituals. Hope you like it!
+                </p>
+            </div>
+
+            <div id="btns" class="d-flex flex-column col-xl-2 col-lg-2 col-md-2 col-sm-12 justify-content-between align-items-center">
+
+                <a class="position-relative btns h-100 d-block activate" style="width:100%; background: url(./assets/img/ChaDJ_LP_btn1.png) center no-repeat; background-size:contain"
+                    href="#" id="defaultOpen" onclick="displayLeft(), onActive(event)">
+                    <img class="w-75 d-block position-absolute center btnn" src="./assets/img/ChaDJ_logo_disabled.png" alt="btn1" id="btn1" />
+                </a>
+
+                <a class="position-relative btns h-100 d-block" style="width:100%; background: url(./assets/img/ChaDJ_LP_btn2.png) center no-repeat; background-size:contain"
+                    href="#" onclick="displayRight(), onActive(event)">
+                    <img class="w-50 d-block position-absolute center btnn" src="./assets/img/ChaDJ_FYI_disabled.png" alt="btn2" id="btn2" />
+                </a>
+
+                <a class="position-relative btns w-100 h-100 d-block" style="background: url(./assets/img/ChaDJ_LP_btn3.png) center no-repeat; background-size:contain"
+                    href="http://www.cdjapan.co.jp/wa/foods/?utm_source=LP&utm_medium=shopNowBtn&utm_campaign=ChaDJ_Fp180626"
+                    target="_blank">
+                    <img class="w-75 d-block position-absolute center btnn" src="./assets/img/ChaDJ_shop.png" alt="btn3" id="btn3" />
+                </a>
+            </div>
+            <div id="board" class="col-xl-10 col-md-10 position-relative">
+                <img id="key_visual" class="d-block w-100" src="./assets/img/ChaDJ_LP_board.png" alt="tea_board" />
+                <img id="key_visual_m" class="d-none w-100" src="./assets/img/ChaDJ_LP_board_m.png" alt="tea_board" />
+                <div id="carousel" style="top:0; left:50%; right:25px; bottom:0" class="carousel slide position-absolute" data-ride="carousel"
+                    data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner position-absolute" style="top:0; left:0px; right:0px; bottom:0">
+                        <div class="carousel-item position-absolute active" style="top:0; left:0; right:0; bottom:0">
+                            <div style="font-size: 16px" class="carousel-caption overflow-scroll-y bg-dark p-xl-5 p-lg-5 p-md-3 p-3" id="about-content">
+                                <h1 class="display-7 font-weight-bold">The
+                                    <span class="green">Craft</span> of CHA
+                                </h1>
+                                <hr class="my-4 bg-white">
+                                <p class="text-white text-center font-weight-normal">
+                                    OSADA Seicha is one of the most respected Japanese green tea brand based in Shizuoka - the home of Cha.
+                                    <br />
+                                    <br /> Their organic sencha "Marugoto Story" is certified by JAS in accordance to the "ECOCERT"
+                                    standard which is the equivalent to USA, Canada, and EU's organic certification.
+                                </p>
+                                <img class="d-block" alt="Osada_Sencha" src="http://st.cdjapan.co.jp/pictures/cms/c/members_20180627.jpg" width="100%" />
+                                <a href="http://www.cdjapan.co.jp/feature/Enjoy_Casual_Effortless_Japanese_Green_Tea_Life_with_Organic_Sencha" target="_blank"
+                                    class="mt-3 btn btn-primary px-5 py-3 fg-bg">
+                                    <h5>Read More</h5>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item position-absolute" style="top:0; left:0; right:0; bottom:0">
+                            <div style="font-size: 16px" class="carousel-caption overflow-scroll-y bg-dark p-xl-5 p-md-4 p-3" id="about-content">
+                                <h1 class="display-7 font-weight-bold">The
+                                    <span class="green">Craft</span> of CHA
+                                </h1>
+                                <hr class="my-4 bg-white">
+                                <p class="text-white text-center font-weight-normal">
+                                    OSADA Seicha is one of the most respected Japanese green tea brand based in Shizuoka - the home of Cha.
+                                    <br />
+                                    <br /> Their organic sencha "Marugoto Story" is certified by JAS in accordance to the "ECOCERT"
+                                    standard which is the equivalent to USA, Canada, and EU's organic certification. See
+                                    More at
+                                    <a href="http://www.cdjapan.co.jp/feature/Enjoy_Casual_Effortless_Japanese_Green_Tea_Life_with_Organic_Sencha">
+                                        Enjoy A Casual & Effortless Japanese Green Tea Life with Organic Sencha
+                                    </a>.
+                                </p>
+                                <img class="d-block" alt="Osada_Sencha" src="http://st.cdjapan.co.jp/pictures/cms/c/members_20180627.jpg" width="100%" />
+                                <a href="http://www.cdjapan.co.jp/wa/foods/?utm_source=LP&utm_medium=shopNowBtn&utm_campaign=ChaDJ_Fp180626" class="mt-3 btn btn-primary px-5 py-3 fg-bg">
+                                    <h5>SHOP NOW</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js "></script>
+    <script src="./js/popper.min.js "></script>
+    <script src="./js/bootstrap.min.js "></script>
+    <script>
+        $(document).ready(function () {
+            var x, y;
+            $('.btns').click(function () {
+                x = $('.activate > img').attr('id');
+                if (x === 'btn1') {
+                    $('#btn1').attr('src', 'assets/img/ChaDJ_logo_active.png');
+                    $('#btn2').attr('src', 'assets/img/ChaDJ_FYI_disabled.png');
+                } else {
+                    $('#btn1').attr('src', 'assets/img/ChaDJ_logo_disabled.png');
+                    $('#btn2').attr('src', 'assets/img/ChaDJ_FYI_active.png');
+                }
+            });
+            $("#defaultOpen").click();
+            $('.btns').mouseover(function () {
+                y = $(this).find('img').attr('id');
+                if (y === 'btn1') {
+                    $('#btn1').attr('src', 'assets/img/ChaDJ_logo_active.png');
+                } else if (y === 'btn2') {
+                    $('#btn2').attr('src', 'assets/img/ChaDJ_FYI_active.png');
+                }
+            });
+            $('.btns').mouseout(function () {
+                y = $(this).find('img').attr('id');
+                hasClass = $(this).hasClass('activate');
+                if (y === 'btn1' && hasClass == true) {
+                    $('#btn1').attr('src', 'assets/img/ChaDJ_logo_active.png');
+                } else if (y === 'btn2' && hasClass == true) {
+                    $('#btn2').attr('src', 'assets/img/ChaDJ_FYI_active.png');
+                } else if (y === 'btn1' && hasClass == false) {
+                    $('#btn1').attr('src', 'assets/img/ChaDJ_logo_disabled.png');
+                } else if (y === 'btn2' && hasClass == false) {
+                    $('#btn2').attr('src', 'assets/img/ChaDJ_FYI_disabled.png');
+                }
+            });
+        });
+        var x = document.getElementById('btn1'.src);
+
+        var w = window.innerWidth;
+
+        function onActive(evt) {
+            var i, btnBg;
+            btnBg = document.getElementsByClassName('btns');
+            for (i = 0; i < btnBg.length; i++) {
+                btnBg[i].className = btnBg[i].className.replace('activate', '');
+            }
+            evt.currentTarget.className += " activate";
+        }
+
+        function colorActivate() {
+            document.getElementById('btn1').src = 'assets/img/ChaDJ_logo_active.png';
+        }
+
+        function colorDeactivate() {
+            var me = this;
+            if (me.classList.contains('activate')) {
+                document.getElementById('btn1').src = 'assets/img/ChaDJ_logo_active.png'
+            } else {
+                document.getElementById('btn1').src = 'assets/img/ChaDJ_logo_disabled.png'
+            }
+        }
+
+        function displayLeft() {
+            document.getElementById('left-section').style.display = 'block';
+        }
+
+        function displayRight() {
+            document.getElementById('left-section').style.display = 'none';
+            document.getElementById('btns').style.animation = 'animateright';
+            document.getElementById('board').style.animation = 'animateright';
+        }
+    </script>
+
+</body>
+
+</html>
